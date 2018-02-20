@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j7D-zA-QZC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSf-Og-fgq">
+                                <rect key="frame" x="16" y="317" width="103" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="103" id="rXq-mA-dwe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Bar Chart">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBarGraph" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fy7-lT-kM8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eW-Xd-ysP">
+                                <rect key="frame" x="247" y="317" width="112" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="Ey0-Qp-9ch"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Line Chart">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLineGraph" destination="BYZ-38-t0r" eventType="touchUpInside" id="FmD-xP-TOu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line Chart.png" translatesAutoresizingMaskIntoConstraints="NO" id="zO1-zy-a1I">
+                                <rect key="frame" x="0.0" y="64" width="375" height="235"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bar Graph.png" translatesAutoresizingMaskIntoConstraints="NO" id="C8A-Cs-JHd">
+                                <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0eW-Xd-ysP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6AL-ux-DxJ"/>
+                            <constraint firstItem="zO1-zy-a1I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6zJ-Ua-G8u"/>
+                            <constraint firstItem="zO1-zy-a1I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BxB-1A-H5k"/>
+                            <constraint firstItem="0eW-Xd-ysP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="FKr-1E-apf"/>
+                            <constraint firstItem="rSf-Og-fgq" firstAttribute="top" secondItem="0eW-Xd-ysP" secondAttribute="top" id="IL1-js-y0Z"/>
+                            <constraint firstItem="rSf-Og-fgq" firstAttribute="baseline" secondItem="0eW-Xd-ysP" secondAttribute="baseline" id="M0x-rz-EKW"/>
+                            <constraint firstItem="C8A-Cs-JHd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nxx-WD-6Jj"/>
+                            <constraint firstItem="rSf-Og-fgq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RBi-Dv-h1d"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rSf-Og-fgq" secondAttribute="trailingMargin" id="VPW-jJ-w5c"/>
+                            <constraint firstItem="zO1-zy-a1I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zon-ID-G8B"/>
+                            <constraint firstItem="C8A-Cs-JHd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b1o-jj-LsP"/>
+                            <constraint firstItem="C8A-Cs-JHd" firstAttribute="top" secondItem="rSf-Og-fgq" secondAttribute="bottom" constant="16" id="bUZ-y5-wTV"/>
+                            <constraint firstItem="rSf-Og-fgq" firstAttribute="top" secondItem="zO1-zy-a1I" secondAttribute="bottom" constant="18" id="s9N-kb-eKQ"/>
+                            <constraint firstItem="C8A-Cs-JHd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wV4-0v-Ond"/>
+                            <constraint firstItem="rSf-Og-fgq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xcg-b6-Qfj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZyO-VH-WYa"/>
+                    <connections>
+                        <outlet property="barchartBtn" destination="rSf-Og-fgq" id="Yfb-bC-Um4"/>
+                        <outlet property="linechartBtn" destination="0eW-Xd-ysP" id="osy-5b-fL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="389.95502248875567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sAk-mg-oT3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j7D-zA-QZC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CmN-Os-PGG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PgN-LV-zPE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYy-V3-Ike" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="390.40479760119945"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bar Graph.png" width="298" height="396"/>
+        <image name="Line Chart.png" width="397" height="238"/>
+    </resources>
+</document>

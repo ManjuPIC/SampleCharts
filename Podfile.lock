@@ -1,0 +1,17 @@
+PODS:
+  - Charts (3.0.5):
+    - Charts/Core (= 3.0.5)
+  - Charts/Core (3.0.5)
+  - PhilipsCharts (1.0.0):
+    - Charts (~> 3.0.5)
+
+DEPENDENCIES:
+  - PhilipsCharts
+
+SPEC CHECKSUMS:
+  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
+  PhilipsCharts: edcbc56f43ad2b0e8613691794673fd55c693507
+
+PODFILE CHECKSUM: 682de1b66b149284c9983a671a4136896aa3b1c1
+
+COCOAPODS: 1.4.0
